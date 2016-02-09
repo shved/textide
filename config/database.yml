@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: textide_development
+
+test:
+  <<: *default
+  database: textide_test
+
+production:
+  <<: *default
+  database: textide_db
+  username: textide
+  password: <%= ENV['TEXTIDE_DATABASE_PASSWORD']  %>
