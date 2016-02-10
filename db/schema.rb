@@ -11,14 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160209214107) do
+ActiveRecord::Schema.define(version: 20160210200935) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "textides", force: :cascade do |t|
-    t.text     "body"
+  create_table "tides", force: :cascade do |t|
+    t.text     "body",       default: ""
     t.datetime "created_at"
+    t.string   "hex"
   end
 
 end

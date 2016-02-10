@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'textides#index'
+  root to: 'tides#index'
 
-  resources :textides, except: [:destroy, :edit, :show]
+  resources :tides, except: [:destroy, :edit, :show]
 end
