@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def proper_font_size(text_length)
+  def tide_font_size(text_length)
     case text_length
     when (0..99) then '36px'
     when (100..199) then '32px'

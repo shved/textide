@@ -1,5 +1,5 @@
 = link_to 'Play', new_tide_path
 
 - @tides.each do |t|
-  p style=("font-size: #{ proper_font_size(t.body.length) };")
+  p style=("font-size: #{ tide_font_size(t.body.length) };")
     = t.body
