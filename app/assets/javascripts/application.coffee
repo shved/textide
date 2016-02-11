@@ -5,6 +5,9 @@
 $ ->
   if $('#input').length > 0
     $input = $('#input')
+    $input.elastic()
+    $input.focus()
+
     inputDelay = 3000
     eraseDelay = 1000
     eraseInterval = 0
