@@ -1,5 +1,11 @@
-= link_to 'Play', new_tide_path
+.fb-like data-href='http://textide.herokuapp.com/' data-layout='button_count' data-action='like' data-show-faces='false' data-share='false'
 
-- @tides.each do |t|
-  p style=("font-size: #{ tide_font_size(t.body.length) };")
-    = t.body
+= link_to 'Play', new_tide_path
+.quote-block
+  p.quote= @quote[0]
+  p.caption= @quote[1]
+
+.tides
+  - @tides.each do |t|
+    p style=("font-size: #{ tide_font_size(t.body.length) };")
+      = t.body

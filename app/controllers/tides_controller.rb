@@ -1,5 +1,6 @@
 class TidesController < ApplicationController
   def index
+    @quote = Tide.kenko_quote
     @tides = Tide.all.order(updated_at: :desc)
   end
 

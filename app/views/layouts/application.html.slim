@@ -1,11 +1,32 @@
 doctype html
 html
   head
+    meta property='og:title' content='Textide — wu wei text editor'
+    meta property='og:description' content='Watch your text writing itself.'
+    meta property='og:site_name' content='Textide'
+    meta property='og:url' content='http://textide.herokuapp.com/'
     title extide
     = favicon_link_tag
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
+    coffee:
+      window.fbAsyncInit = ->
+        FB.init
+          appId: "948729311875490"
+          xfbml: true
+          version: "v2.5"
+
+
+      ((d, s, id) ->
+        js = undefined
+        fjs = d.getElementsByTagName(s)[0]
+        return  if d.getElementById(id)
+        js = d.createElement(s)
+        js.id = id
+        js.src = "//connect.facebook.net/en_US/sdk.js"
+        fjs.parentNode.insertBefore js, fjs
+      ) document, "script", "facebook-jssdk"
   body
     .container
       = yield
