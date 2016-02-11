@@ -10,8 +10,8 @@ $ ->
     $input.focus()
     $saved.hide()
 
-    inputDelay = 2000
-    eraseDelay = 500
+    inputDelay = 3000
+    eraseDelay = 1000
     fadeOutDelay = 1000
     eraseInterval = 0
     eraseTimeout = 0
