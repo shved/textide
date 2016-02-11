@@ -8,14 +8,14 @@ $ ->
     $input.elastic()
     $input.focus()
 
-    inputDelay = 3000
-    eraseDelay = 1000
+    inputDelay = 2000
+    eraseDelay = 500
     eraseInterval = 0
     eraseTimeout = 0
     hex = Math.random().toString(36).substring(2)
 
     eraseWord = ($input) ->
-      text = $input.val()
+      text = $input.val().trim()
       lastIndex = text.lastIndexOf(' ')
       $input.val(text.substring(0, lastIndex))
 
@@ -26,7 +26,7 @@ $ ->
     )
 
     eraseInput = ->
-      if $input.val().length > 0
+      if $input.val().trim().length > 0
         $.ajax
           method: 'POST'
           url: '/tides'

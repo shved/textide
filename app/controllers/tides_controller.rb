@@ -1,6 +1,6 @@
 class TidesController < ApplicationController
   def index
-    @tides = Tide.all.limit(100)
+    @tides = Tide.all.order(updated_at: :desc)
   end
 
   def new
