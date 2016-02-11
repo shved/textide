@@ -5,38 +5,35 @@
 
 @import url(https://fonts.googleapis.com/css?family=Merriweather:300&subset=latin,cyrillic);
 
-p, a, textarea {
-  font-family: 'Merriweather', serif;
-  font-size: 18px;
-}
-
-p {
-  margin: 50px auto;
-}
-
-a {
-  color: blue;
-  text-decoration: none;
-  &:hover {
-    border-bottom: 1px solid blue;
+body {
+  padding: 0;
+  margin: 0;
+  p, a, textarea {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
   }
-}
-
-.container {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 60px;
-}
-
-textarea {
-  resize: none;
-  overflow-y: hidden;
-  border: none;
-  padding-top: 1.1em;
-  margin-top: 40px;
-  width: 100%;
-  height: 100%;
-  &:focus {
-    outline: none;
+  p {
+    margin: 50px auto;
+  }
+  a {
+    color: blue;
+    text-decoration: none;
+    &:hover {
+      border-bottom: 1px solid blue;
+    }
+  }
+  .container {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 60px;
+  }
+  textarea {
+    resize: none;
+    border: none;
+    margin-top: 40px;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
   }
 }
