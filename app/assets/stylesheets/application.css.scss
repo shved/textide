@@ -1,0 +1,11 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300&subset=latin,cyrillic);
+
+p, a {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+}
