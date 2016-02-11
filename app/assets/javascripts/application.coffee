@@ -5,8 +5,8 @@
 $ ->
   if $('#input').length > 0
     $input = $('#input')
-    inputDelay = 5000
-    eraseDelay = 2000
+    inputDelay = 3000
+    eraseDelay = 1000
     eraseInterval = 0
     eraseTimeout = 0
     hex = Math.random().toString(36).substring(2)
