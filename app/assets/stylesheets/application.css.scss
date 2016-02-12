@@ -8,13 +8,16 @@
 body {
   padding: 0;
   margin: 0;
+
   p, a, textarea {
     font-family: 'Merriweather', serif;
     font-size: 18px;
   }
+
   p {
     margin: 50px auto;
   }
+
   a {
     color: blue;
     text-decoration: none;
@@ -22,14 +25,17 @@ body {
       border-bottom: 1px solid blue;
     }
   }
+
   .container {
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 80px;
   }
+
   .tides {
     margin-top: 140px;
   }
+
   textarea {
     resize: none;
     border: none;
@@ -39,24 +45,29 @@ body {
       outline: none;
     }
   }
+
   .saved {
     display: inline;
     margin-left: 25px;
     font-size: 14px;
     color: gray;
   }
+
   .fb-like {
     position: fixed;
     bottom: 20px;
     left: 20px;
   }
+
   .quote-block {
     float: right;
     width: 50%;
+
     p {
       margin: 0;
       font-size: 12px;
     }
+
     p.caption {
       text-align: right;
       margin-top: 10px;
