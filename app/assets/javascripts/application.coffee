@@ -11,7 +11,7 @@ $ ->
     $saved.hide()
 
     inputDelay = 3000
-    eraseDelay = 1000
+    eraseDelay = 300
     fadeOutDelay = 1000
     eraseInterval = 0
     eraseTimeout = 0
